@@ -1,0 +1,20 @@
+DELETE http://localhost:8080/api/usuarios/5
+GET http://localhost:8080/api/usuarios/5
+PUT http://localhost:8080/api/usuarios/5
+POST http://localhost:8080/api/usuarios
+//METODOS SI SE QUIERE COMPROBAR EL FUNCIONAMIENTO DE LA BD, con
+//post agregar usuario, put lo actualizas, get te busca el usuario y el delete pues lo borra
+//el /5 es el id del usuario, si es el id 10, pues se pone un 10 en ves de un 5
+Content-Type: application/json
+{
+  "nombre": "Enrique",
+  "apellido": "Meléndez",
+  "email": "christian@ejemplo.com",
+  "passwordHash": "123456",
+  "telefono": "70001122",
+  "carnetUniversitario": "CM202601",
+  "universidad": "UDB",
+  "idRol": 1,
+  "estado": true
+}
+
